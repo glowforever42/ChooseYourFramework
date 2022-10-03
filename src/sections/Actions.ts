@@ -48,7 +48,7 @@ export class Actions extends Section<ChooseYourFramework> {
         this.game.menuGrapher.createMenu("GeneralText");
         this.game.menuGrapher.addMenuDialog(
             "GeneralText",
-            [["So! You want the " + other.title.replace("Library", "") + " framework?"]],
+            [["오! 혹시 찾는게 " + other.title.replace("Library", "") + " 맞나요?"]],
             (): void => {
                 this.game.menuGrapher.createMenu("Yes/No", {
                     killOnB: ["GeneralText"],
@@ -60,8 +60,8 @@ export class Actions extends Section<ChooseYourFramework> {
                             callback: () => {
                                 this.game.menuGrapher.registerB();
                                 this.game.itemsHolder.setItem(other.title, true);
-                                const libraries = ["AngularLibrary", "ReactLibrary", "SolidLibrary", "SvelteLibrary", "VueLibrary" ];
-                                if(libraries.every((library) => this.game.itemsHolder.getItem(library))) {
+                                const libraries = ["AngularLibrary", "ReactLibrary", "SolidLibrary", "SvelteLibrary", "VueLibrary"];
+                                if (libraries.every((library) => this.game.itemsHolder.getItem(library))) {
                                     window.open("https://hi.joshuakgoldberg.com", "_blank")
                                 }
                                 window.open(other.href);

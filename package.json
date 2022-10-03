@@ -24,6 +24,7 @@
         "objectmakr": "^0.8.15",
         "pixeldrawr": "^0.8.15",
         "pixelrendr": "^0.8.15",
+        "puppeteer": "^18.0.5",
         "quadskeepr": "^0.8.15",
         "stringfilr": "^0.8.15",
         "timehandlr": "^0.8.15",

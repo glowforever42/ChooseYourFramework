@@ -93,3 +93,8 @@ section.section-text {
     font-family: "Press Start";
     src: url("theme/fonts/PressStart2P.woff2") format("woff2");
 }
+
+@font-face {
+    font-family: "GSC";
+    src: url("theme/fonts/gsc.ttf") format("truetype");
+}
